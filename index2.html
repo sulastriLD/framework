@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style type="text/css">
+    	h3{
+    		margin-top: 50px;
+    	}
+    	.v-align{
+    		min-height: 7rem;
+    		background-color: rgba(0,0,0,0.1);
+    	}
+    	.h-align{
+    		background-color: rgba(0,0,0,0.1);
+    	}
+    	.h-align div{
+    		margin: 5px 0px;
+    	}
+    	.offset div{
+    		padding: 5px 0px;
+    	}
+    	.iseng .bata{
+    		width: 100%;
+    		height: 25px;
+    	}
+    	.p-0{
+    		padding: 0px;
+    	}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col">
+    			<b> Nama : Sulastri </br> NIM : 2014520001 </b>
+    		</div>
+    	</div>
+
+    	
+
+    	<h3>Auto-layout Columns</h3>
+    	<div class="row">
+    		<div class="col">
+    			<div class="card text-center card-outline-secondary">
+    				col
+    			</div>
+    		</div>
+    		<div class="col">
+    			<div class="card text-center card-outline-primary">
+    				col
+    			</div>
+    		</div>
+    	</div>
+
+    	<h3>Vertical Alignment</h3>
+    	<div class="row v-align">
+		    <div class="col align-self-start">
+		     	<div class="card text-center text-white card-success">
+    				col align-self-start
+    			</div>
+		    </div>
+		    <div class="col align-self-center">
+		     	<div class="card text-center text-white card-warning">
+    				col align-self-center
+    			</div>
+		    </div>
+		    <div class="col align-self-end">
+		     	<div class="card text-center text-white card-danger">
+    				col align-self-end
+    			</div>
+		    </div>
+		 </div>
+
+		<h3>Horizobtal Alignment</h3>
+		<div class="h-align">
+			<div class="row justify-content-start">
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-success">
+	    				justify-content-start
+	    			</div>
+			    </div>
+			 </div>
+			 <div class="row justify-content-center">
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-warning">
+	    				justify-content-center
+	    			</div>
+			    </div>
+			 </div>
+			 <div class="row justify-content-end">
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-danger">
+	    				justify-content-end
+	    			</div>
+			    </div>
+			 </div>
+			 <div class="row justify-content-around">
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-secondary">
+	    				justify-content-around
+	    			</div>
+			    </div>
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-secondary">
+	    				justify-content-around
+	    			</div>
+			    </div>
+			 </div>
+			 <div class="row justify-content-between">
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-primary">
+	    				justify-content-between
+	    			</div>
+			    </div>
+			    <div class="col-md-4">
+			      	<div class="card text-center card-outline-primary">
+	    				justify-content-between
+	    			</div>
+			    </div>
+			 </div>
+		</div>
+
+		<h3>Offsetting</h3>
+		<div class="offset">
+			<div class="row">
+				<div class="col-md-2 offset-md-5">
+					<div class="card text-center text-white card-success">
+	    				col-md-2 offset-md-5
+	    			</div>
+				</div>
+				<div class="col-md-4 offset-md-4">
+					<div class="card text-center text-white card-warning">
+	    				col-md-4 offset-md-4
+	    			</div>
+				</div>
+				<div class="col-md-6 offset-md-3">
+					<div class="card text-center text-white card-danger">
+	    				col-md-6 offset-md-35
+	    			</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Ordering</h3>
+		<div class="container">
+		  <div class="row">
+		    <div class="col flex-unordered">
+		      	<div class="card text-center card-outline-success">
+    				col flex-unordered
+    			</div>
+		    </div>
+		    <div class="col flex-last">
+		      	<div class="card text-center card-outline-warning">
+    				col flex-last
+    			</div>
+		    </div>
+		    <div class="col flex-first">
+		      	<div class="card text-center  card-outline-danger">
+    				col flex-first
+    			</div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<h3>Nasted</h3>
+		<div class="iseng">
+			<div class="row">
+				<!-- Menara kiri -->
+				<div class="col-md-4 align-self-end">
+					<div class="row justify-content-center">
+						<div class="col-md-1 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-2 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-4 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+					<div class="col-md-4 align-self-end">
+					<div class="row justify-content-center">
+						<div class="col-md-1 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-2 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-4 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+					<div class="col-md-4 align-self-end">
+					<div class="row justify-content-center">
+						<div class="col-md-1 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-2 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-4 p-0">
+							<div class="bata card card-danger">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 p-0">
+							<div class="bata card card-secondary">
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+					
+		
+    </div>
+    </br>
+    <br>
+    <br>
+    <br>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
